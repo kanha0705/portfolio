@@ -57,7 +57,11 @@ body{
   }
 
 h2{
-    color: white;
+    color: black;
+}
+
+h1{
+    color: black;
 }
 
 body{
