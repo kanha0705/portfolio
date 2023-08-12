@@ -1,0 +1,67 @@
+h2{
+    text-align: center;
+    
+}
+
+h2{
+    border-style: solid;
+}
+
+#one{
+    color: rgb(0, 0, 0);
+}
+
+#two{
+    color: rgb(0, 0, 0);
+}
+
+#three{
+    color: rgb(0, 0, 0);
+}
+
+
+#three{
+    color: rgb(0, 0, 0);
+}
+
+#four{
+    color: rgb(0, 0, 0);
+}
+
+#five{
+    color: rgb(0, 0, 0);
+}
+
+
+#six{
+    height: 200px;
+    width: 150px;
+    border-radius: 8px;
+    opacity: 1.0;
+
+}
+
+body{
+    opacity: 1.0;
+}
+
+#eight{
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+h2{
+    color: white;
+}
+
+body{
+
+
+    background-color: rgb(231, 123, 83);
+}
