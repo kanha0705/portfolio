@@ -1,71 +1,290 @@
-h2{
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #3a6186, #89253e);
+    color: #333;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     text-align: center;
-    
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-h2{
-    border-style: solid;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease;
 }
 
-#one{
-    color: rgb(0, 0, 0);
+nav {
+    margin-top: 10px;
 }
 
-#two{
-    color: rgb(0, 0, 0);
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-#three{
-    color: rgb(0, 0, 0);
+nav ul li {
+    margin: 0 15px;
 }
 
-
-#three{
-    color: rgb(0, 0, 0);
+nav ul li a {
+    color: rgb(155, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
-#four{
-    color: rgb(0, 0, 0);
+nav ul li a:hover {
+    color: #000000;
 }
 
-#five{
-    color: rgb(0, 0, 0);
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 2s ease;
 }
 
-
-#six{
-    height: 200px;
-    width: 150px;
-    border-radius: 8px;
-    opacity: 1.0;
-
+section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.5s;
 }
 
-body{
-    opacity: 1.0;
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
-#eight{
-    text-align: center;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.center {
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease forwards;
+    animation-delay: 1s;
+}
+
+li b {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-h2{
-    color: black;
 }
 
-h1{
-    color: black;
+.profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0ee915;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 1s ease forwards;
+    animation-delay: 1s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-body{
+.profile-pic:hover {
+    transform: scale(0.9);
+    opacity: 0.9;
+}
 
+.projects,
+.blogs,
+.contact {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
 
-    background-color: rgb(231, 123, 83);
+.projects .project,
+.blogs .blog-post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project:hover,
+.blogs .blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project img,
+.blogs .blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 20px;
+    border-top: 2px solid #4CAF50;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffeb3b;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #45a049;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects */
+header:hover {
+    background-color: #5a5555;
 }
