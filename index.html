@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Its me</title>
-    <link
-    rel="stylesheet"
-    href="style.css"
-    />
-
-    <style id="seven">
-        body {
-          background-image: url("download.jpg");
-          background-repeat: no-repeat;
-          background-attachment: fixed;  
-          background-size: cover;
-          opacity: 1.0;
-          
-        }
-        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Me</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1 id="eight"> Personal Portfolio</h1>
-    <style>
-        #eight{
-                color: white;
-        }
-    </style>
-    <hr>
-    
-    <h2>Personal Information</h1>
-
-    <img id="six"  src="./saurabh.jpg" alt="Profile pic" class="center"/>
-
-    <ul id="one">
-        <li><b>Name : Saurabh Bhausaheb Patil</b></li>
-        <li><b>Date of Birth : 07 May 2003</b></li>
-        <li><b>Address:  Dharashiv</b></li>
-    </ul>
-    <hr>
-
-    <h2><b>Educational Background</b></h2>
-    <ul  id="two">
-        <li><b>Bachelor of Electronics and Telecommunications Engineering(B.E)</b></li>
-    </ul>
-    <hr>
-
-    <h2><b>Key Achievement</b></h2>
-    <ul id="three">
-        <b>
-            <li>Got a 1st Price in Drawing Competition</li>
-            <li>Leadership in college event</li>
-            <li>Getting a measurable result in 1st Year</li>
-            <li>Got a Scholarship</li>
-        </b>
-    </ul>
-    <hr>
-
-    <h2><b>Hobbies</b></h2>
-    <ul id="four">
-        <b>
-        <li>Painting</li>
-        <li>Reading Books</li>
-        <li>Coding</li>
-        <li>Dancing</li>
-        <li>Capturing Moments</li>
-        </b>
-    </ul>
-    <hr>
-    <h2><b>Technical Skills</b></h2>
-        <ul id="five">
-            <b>
-            <li>Networking Troubleshooting</li>
-            <li>Microsoft Office</li>
-            <li>Animation</li>
-            <li>Creativity</li>
-            <li>Project management</li>
-            </b>
-        </ul>
-        <hr>
-
-    <h2>Contact me</h2>
-    <a href="contact.html">contact</a>
-
+    <header>
+        <h1>Personal Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section>
+            <div class="profile-info">
+                <div class="profile-pic-container">
+                    <img src="./saurabh.jpg" alt="Profile pic" class="profile-pic">
+                </div>
+                <div>
+                    <h2>Personal Information</h2>
+                    <ul>
+                        <li><b>Name:</b> Saurabh Bhausaheb Patil</li>
+                        <li><b>Date of Birth:</b> 07 May 2003</li>
+                        <li><b>Address:</b> Dharashiv</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Educational Background</h2>
+            <ul>
+                <li><b>Bachelor of Electronics and Telecommunications Engineering (B.E)</b></li>
+            </ul>
+        </section>
+        <section class="achievements">
+            <h2>Key Achievements</h2>
+            <ul>
+                <li><b>Got a 1st Prize in Drawing Competition</b></li>
+                <li><b>Leadership in college event</b></li>
+                <li><b>Achieved measurable results in 1st Year</b></li>
+                <li><b>Received a Scholarship</b></li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1" />
+                <h3>Project Title 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2" />
+                <h3>Project Title 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="blogs" class="blogs">
+            <h2>Blogs</h2>
+            <article class="blog-post">
+                <h3>Blog Post Title 1</h3>
+                <p>Excerpt from blog post 1... <a href="#">Read more</a></p>
+            </article>
+            <article class="blog-post">
+                <h3>Blog Post Title 2</h3>
+                <p>Excerpt from blog post 2... <a href="#">Read more</a></p>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Saurabh Bhausaheb Patil. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to Top</a>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
